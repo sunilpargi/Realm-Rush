@@ -48,7 +48,7 @@ MonoBehaviour:
   objectToPan: {fileID: 4055726460427236068}
   attackRange: 30
   projectileParticle: {fileID: 8149720234043420131}
-  targetEnemy: {fileID: 0}
+  targetEnemy: {fileID: 4772877796818659955, guid: 71f6cd963c7a96841b8273b3b4520662, type: 3}
 --- !u!1 &5266359073858913411
 GameObject:
   m_ObjectHideFlags: 0

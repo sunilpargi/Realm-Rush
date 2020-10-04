@@ -7,7 +7,7 @@ using UnityEngine;
 public class EnemyDamage : MonoBehaviour
 {
     [SerializeField] Collider colliderMesh;
-    [SerializeField] int hitPoints = 10;
+    [SerializeField] int hitPoints = 20;
     void Start()
     {
 
