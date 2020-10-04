@@ -270,14 +270,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: 1,-1
       objectReference: {fileID: 0}
-    - target: {fileID: 1436325741664459053, guid: c7221cde981d44141acb30ff0f035713, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436325741664459053, guid: c7221cde981d44141acb30ff0f035713, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.41
-      objectReference: {fileID: 0}
     - target: {fileID: 5423005158667070640, guid: c7221cde981d44141acb30ff0f035713, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.5452619
@@ -721,14 +713,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: 1,0
       objectReference: {fileID: 0}
-    - target: {fileID: 1436325741664459053, guid: c7221cde981d44141acb30ff0f035713, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436325741664459053, guid: c7221cde981d44141acb30ff0f035713, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.41
-      objectReference: {fileID: 0}
     - target: {fileID: 5423005158667070640, guid: c7221cde981d44141acb30ff0f035713, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.5452619
@@ -772,10 +756,6 @@ PrefabInstance:
     - target: {fileID: 5423005158667070640, guid: c7221cde981d44141acb30ff0f035713, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7312643944061433567, guid: c7221cde981d44141acb30ff0f035713, type: 3}
-      propertyPath: m_Text
-      value: 1,0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7221cde981d44141acb30ff0f035713, type: 3}
@@ -3162,8 +3142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2232cf12cd075af448f678c6cabf7e61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondToWait: 4
-  enemy: {fileID: 4861725230609394144, guid: 71f6cd963c7a96841b8273b3b4520662, type: 3}
+  secondToWait: 10.3
+  enemy: {fileID: 1289942997295908, guid: 04f81ff9814844ccfa08226f8d46a3f4, type: 3}
 --- !u!4 &1128158846 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4320373430648300, guid: eaf585f6d1c526346860421fbfbc3de4, type: 3}

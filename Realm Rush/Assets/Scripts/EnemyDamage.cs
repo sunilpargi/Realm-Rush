@@ -7,15 +7,14 @@ using UnityEngine;
 public class EnemyDamage : MonoBehaviour
 {
     [SerializeField] Collider colliderMesh;
-    [SerializeField] int hitPoints = 20;
-    void Start()
-    {
-
-    }
+    [SerializeField] int hitPoints = 1;
+    [SerializeField] ParticleSystem hitParticlePrefab;
+    [SerializeField] ParticleSystem deathParticlePrefab;
+   
 
     private void OnParticleCollision(GameObject other)
     {
-        print("I am hit");
+       
         ProcessHit();
         KillEnemy();
     }
@@ -25,12 +24,16 @@ public class EnemyDamage : MonoBehaviour
     {
         hitPoints = hitPoints - 1;
         print(hitPoints);
+        hitParticlePrefab.Play();
+
     }
     private void KillEnemy()
     {
         if(hitPoints <= 0)
         {
-            Destroy(gameObject);
+            var vfx =Instantiate(deathParticlePrefab, transform.position, Quaternion.identity);
+            vfx.Play();
+            Destroy(this.gameObject);
         }
     }
 }

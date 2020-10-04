@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5423005158667070640}
   - component: {fileID: -6957367577382706198}
   - component: {fileID: -2659503282911599541}
+  - component: {fileID: 3350134538633436184}
   m_Layer: 0
   m_Name: 1,0
   m_TagString: Untagged
@@ -47,7 +48,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isExplored: 0
+  isPlaceble: 1
   exploredFrom: {fileID: 0}
+  towerPrefab: {fileID: 4055007659323729548, guid: 950508587c179ea4687837acaa3c835a, type: 3}
 --- !u!114 &-2659503282911599541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,6 +63,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95329b74be71c3847a45d0c3707b57aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3350134538633436184
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867750109047364706}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: -5, z: 0}
 --- !u!1 &7599857977027692906
 GameObject:
   m_ObjectHideFlags: 0
@@ -86,7 +102,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7599857977027692906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.2, y: 2.4, z: 1.41}
+  m_LocalPosition: {x: -2.2, y: 4, z: 1.41}
   m_LocalScale: {x: 0.07665407, y: 0.07665407, z: 0.07665407}
   m_Children: []
   m_Father: {fileID: 5791036214528070102}
@@ -141,7 +157,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7599857977027692906}
-  m_Text: 2,0
+  m_Text: 1,0
   m_OffsetZ: 0
   m_CharacterSize: 2
   m_LineSpacing: 1
@@ -319,7 +335,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5039439344933906137, guid: f27a4597efbf3694b95687e7aeef7fcc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f27a4597efbf3694b95687e7aeef7fcc, type: 3}
 --- !u!4 &4816116098531528497 stripped
 Transform:

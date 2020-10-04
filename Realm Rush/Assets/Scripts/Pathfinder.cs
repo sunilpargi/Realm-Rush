@@ -21,7 +21,7 @@ public class Pathfinder : MonoBehaviour
         Vector2Int.left
     };
 
-    public List<Waypoint> GetPath()
+    public List<Waypoint> GetPath() 
     {
         if (path.Count == 0)
         {
@@ -55,6 +55,7 @@ public class Pathfinder : MonoBehaviour
     private void SetAsPath(Waypoint waypoint)
     {
         path.Add(waypoint);
+        waypoint.isPlaceble = false;
        
     }
 
