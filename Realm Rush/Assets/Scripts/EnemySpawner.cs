@@ -8,6 +8,8 @@ public class EnemySpawner : MonoBehaviour
     [Range(0f, 20f)]
     [SerializeField] float secondToWait = 4f;
     [SerializeField] GameObject enemy;
+
+    [SerializeField] Transform enemyParentTransform;
   
 
     // Update is called once per frame
@@ -18,10 +20,10 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator enemySpawner()
     {
-        while (true)
+        while (true) // forever
         {
-            var spawnEnemy = Instantiate(enemy, transform.position, Quaternion.identity);
-            spawnEnemy.transform.parent = transform;
+            var newEnemy = Instantiate(enemy, transform.position, Quaternion.identity);
+            newEnemy.transform.parent = transform;
             yield return new WaitForSeconds(secondToWait);
         }
      
