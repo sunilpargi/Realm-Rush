@@ -14,6 +14,8 @@ public class EnemySpawner : MonoBehaviour
 
     [SerializeField] Text spwanedEnemies;
     int score = 0;
+
+    [SerializeField] AudioClip spawnEnemySFX;
   
 
     // Update is called once per frame
@@ -28,6 +30,7 @@ public class EnemySpawner : MonoBehaviour
         while (true) // forever
         {
             AddScore();
+            GetComponent<AudioSource>().PlayOneShot(spawnEnemySFX);
             var newEnemy = Instantiate(enemy, transform.position, Quaternion.identity);
             newEnemy.transform.parent = transform;
             yield return new WaitForSeconds(secondToWait);
