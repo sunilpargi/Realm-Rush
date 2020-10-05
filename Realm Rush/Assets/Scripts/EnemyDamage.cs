@@ -23,7 +23,6 @@ public class EnemyDamage : MonoBehaviour
     private void ProcessHit()
     {
         hitPoints = hitPoints - 1;
-        print(hitPoints);
         hitParticlePrefab.Play();
 
     }
